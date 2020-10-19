@@ -21,8 +21,9 @@ if __name__ == "__main__":
     try:
         if not args.files:
             os.system(f'git commit -m "{args.msg} || Timestamp: {convert_to_local_time()}" .')
-        for filename in args.files:
-            os.system(f'git commit -m "{args.msg} || Timestamp: {convert_to_local_time()}" ./{filename}')
+        else:
+            for filename in args.files:
+                os.system(f'git commit -m "{args.msg} || Timestamp: {convert_to_local_time()}" ./{filename}')
         os.system("git push origin test-exercise")
         print("Success")
     except Exception as e:
