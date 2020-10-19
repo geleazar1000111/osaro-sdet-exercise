@@ -15,10 +15,12 @@ def convert_to_local_time():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='''Provide timestamp with git commit messages''')
     parser.add_argument('--message', dest="msg", help='Message to include with git commit')
+    parser.add_argument('--files', dest="files", help='Files to commit')
     args = parser.parse_args()
 
     try:
-        os.system(f'git commit -m "{args.msg} || Timestamp: {convert_to_local_time()}" .')
+        for filename in args.files:
+            os.system(f'git commit -m "{args.msg} || Timestamp: {convert_to_local_time()}" ./{filename}')
         os.system("git push origin")
         print("Success")
     except Exception as e:
