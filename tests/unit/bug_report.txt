@@ -1,0 +1,15 @@
+Summary:
+
+The Consumer's process method will raise an IndexError due to .pop() being called on an empty queue.
+
+Steps to Reproduce:
+
+Run the process method with a normal queue.
+
+Expected Results:
+
+None
+
+Actual Results:
+
+IndexError
