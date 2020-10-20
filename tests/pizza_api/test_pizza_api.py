@@ -1,6 +1,5 @@
 import requests
 import pytest
-from access_token import get_tok
 
 access_token = requests.post("http://order-pizza-api.herokuapp.com/api/auth", json={
   "password": "test",
@@ -16,7 +15,6 @@ data = {
   "Table_No": 0,
   "Timestamp": "string"
 }
-
 
 
 class TestPizzaApi:
