@@ -7,3 +7,5 @@ Running the tests:
 2. Run `pip3 install -r requirements.txt` to install requirements
 
 3. Go to the /tests directory and run `python3 -m pytest`
+
+There is also the file `git_timestamp.py`. The purpose of this script was to record the timestamps of my commits throughout the exercise.

@@ -36,4 +36,4 @@ Didn't have enough time to completely do the Averager Model class, but I added t
 
 Other Notes
 -
-If I had more time I would have used pytest fixtures and a conftest file. I would have also separate the expected data for the pizza API into another file (like what I had to do for the Geri API tests). And I would definitely make sure the API requests for the pizza API were mocked.
+If I had more time I would have used pytest fixtures and a conftest file. I would have also liked to put docstrings and more descriptive comments in the test files. I would have also separate the expected data for the pizza API into another file (like what I had to do for the Geri API tests). And I would definitely make sure the API requests for the pizza API were mocked.
